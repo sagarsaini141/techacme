@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <title>REGISter !!!!</title>
+    <style>
+      
+
+        body {
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    overflow: auto;
+    font-family: monospace;
+    background: linear-gradient(315deg, rgba(60,132,206,1) 38%, rgba(48,238,226,1)  98%);
+    animation: gradient 15s ease infinite;
+    background-size: 400% 400%;
+    background-attachment: fixed;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+.wave {
+    background: rgb(255 255 255 / 25%);
+    border-radius: 1000% 1000% 0 0;
+    position: fixed;
+    width: 200%;
+    height: 12em;
+    animation: wave 10s -3s linear infinite;
+    transform: translate3d(0, 0, 0);
+    opacity: 0.8;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.wave:nth-of-type(2) {
+    bottom: -1.25em;
+    animation: wave 18s linear reverse infinite;
+    opacity: 0.8;
+}
+
+.wave:nth-of-type(3) {
+    bottom: -2.5em;
+    animation: wave 20s -1s reverse infinite;
+    opacity: 0.9;
+}
+
+@keyframes wave {
+    2% {
+        transform: translateX(1);
+    }
+
+    25% {
+        transform: translateX(-25%);
+    }
+
+    50% {
+        transform: translateX(-50%);
+    }
+
+    75% {
+        transform: translateX(-25%);
+    }
+
+    100% {
+        transform: translateX(1);
+    }
+}
+    
+        .container{
+            margin: 5vh 2%;
+            width: 400px;
+            padding: 25px;
+            border: 1px solid #ccc;
+            background-color: #ffffff73;
+            border-radius: 8px;
+            box-shadow: 0px 2px 18px 2px rgba(0, 0, 0, 0.568);
+        }
+    
+    
+        .col-25, .col-75{
+            margin:auto 0;
+
+        }
+        .width input{
+         width: 85%;
+        }
+
+        .col-25{
+         font-weight: 600;
+         margin-left: 2%;
+        }
+        h6{
+    font-weight: 600;
+        }
+        .row{
+         margin-top: 2%;
+        }
+
+        
+    
+   
+.submit{
+    padding: 5px 5px;
+    width: 30%;
+    background-color: #167986;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    margin:5% auto auto auto;
+    font-weight: 700;
+}
+input{
+   border-radius: 3px;
+   border: none;
+   line-height: 6vh;
+}
+.submit:hover{
+    background-color: #45a049;
+
+}
+
+input[type="checkbox"] {
+  margin-right: 1%;
+}
+
+    </style>
+
+</head>
+<body>
+   <div>
+      <div class="wave"></div>
+      <div class="wave"></div>
+      <div class="wave"></div>
+   </div>
+      <form> 
+         <div class="container">
+            <div class="row">
+               <div class="col-25">
+                  <label>Name</label>
+               </div>
+               <div class="col-75 width">
+                  <input type="text" name="name" required>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-25">
+                  <label>Mobile No.</label>
+               </div>
+               <div class="col-75 width">
+                  <input type="number" name="mobile no."  required>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-25">
+                  <label>E-mail</label>
+               </div> 
+               <div class="col-75 width">
+                  <input type="email" name="email"  required>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-25">
+                  <h6>Events</h6>
+               </div>
+               <div class="col-75 ckbox">
+                  <input type="checkbox" name="event1" value="500">Event1  (500$)<br>
+                  <input type="checkbox" name="event2" value="450">Event2  (450$)<br>
+                  <input type="checkbox" name="event3" value="350">Event3  (350$)<br>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-25 ">
+                  <label>Total Price</label>
+               </div>
+               <div class="col-75 width">
+                  <input type="text" name="total" placeholder=" Total Price.." required readonly>
+               </div>
+            </div>
+            <div class="row">
+               <input  class="submit" type="submit" value="Submit">
+            </div>
+         </div>
+      </form>
+
+ </body>
+</html>
