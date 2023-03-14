@@ -1,0 +1,30 @@
+/* .card {
+    border: 1px solid #eaeaea;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.2s;
+  }
+   */
+
+  
+  .card-img-top {
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .card-title {
+    font-weight: 600;
+  }
+  
+  .card-text {
+    margin-bottom: 1rem;
+  }
+
+ .registerbtn{
+width: 50%;
+position: relative;
+float: right;
+ }
+ .card-footer{
+  border: none;
+ }

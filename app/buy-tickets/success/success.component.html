@@ -1,0 +1,15 @@
+<div class="container">
+    <h1>Payment successful</h1>
+    <p>Payment ID: {{ paymentId }}</p>
+    <p>Name: {{ payment.name }}</p>
+    <p>Email: {{ payment.email }}</p>
+    <p>Phone: {{ payment.phone }}</p>
+    <p>Total amount: {{ payment.amount }}</p>
+    <p>Events:</p>
+    <ul>
+      <li *ngFor="let event of payment.events">{{ event.name }} ({{ event.price }})</li>
+    </ul>
+    <img [src]="qrCodeUrl" alt="QR code">
+    <p>Scan the QR code to download your ticket</p>
+  </div>
+  

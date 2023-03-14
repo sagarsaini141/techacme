@@ -1,0 +1,24 @@
+<!-- events.component.html -->
+<div class="container">
+  <div class="row">
+    <div class="col-md-4 mb-4" *ngFor="let event of events">
+      <div class="card h-100">
+        <!-- <img class="card-img-top" [src]="event.image" alt="Card image cap"> -->
+
+        <img class="card-img-top" [src]="event.img" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title"><b>{{event.title}}</b></h5>
+          <p class="card-text"><b>{{event.category}}</b></p>
+          <!-- <p class="card-text">Date: {{event.date}}</p> -->
+          <p class="card-text"><b>venue & time: </b> {{event.venue}}</p>
+          <p class="card-text"><b>pricing: </b> {{event.pricing}}</p>
+          <p class="card-text"><b>Contact: </b>8305270785 </p>
+        </div>
+
+        <div class="card-footer">
+        <button routerLink="/buy-tickets"  class="btn btn-primary registerbtn">Register</button>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,35 @@
+
+
+<div class="container">
+    <div class="row">
+      <div class="col-md-6 offset-md-3">
+        <form (ngSubmit)="onSubmit()">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" id="name" [(ngModel)]="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" id="email" [(ngModel)]="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone</label>
+            <input type="tel" class="form-control" id="phone" [(ngModel)]="phone" name="phone" required>
+          </div>
+          <div class="form-group">
+            <label>Select events:</label><br>
+            <div *ngFor="let event of events">
+              <label>
+                <input type="checkbox" [value]="event.price" (change)="onCheckboxChange($event, event.price)"> {{ event.name }} ({{ event.price }})
+              </label>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="total">Total</label>
+            <input type="text" class="form-control" id="total" value="{{calculateTotal()}}" readonly>
+          </div>
+          <button type="submit" class="btn btn-secondary ">Buy</button>
+        </form>
+      </div>
+    </div>
+  </div>

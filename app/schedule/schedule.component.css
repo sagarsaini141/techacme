@@ -1,0 +1,103 @@
+#schedule {
+  padding: 60px 0 60px 0;
+ 
+  }
+  
+  #schedule .nav-tabs {
+    text-align: center;
+    margin: auto;
+    display: block;
+    border-bottom: 0;
+    margin-bottom: 30px;
+  }
+  
+  #schedule .nav-tabs li {
+    display: inline-block;
+    margin:0.4%;
+  }
+  
+  #schedule .nav-tabs a {
+    border: none;
+    border-radius: 50px;
+    font-weight: 600;
+    background-color: #0e1b4d;
+    color: #fff;
+    padding: 2vh 7vw;
+  }
+  
+  #schedule .nav-tabs a.active {
+    background-color: #3f71d7;
+    color: #fff;
+  }
+  
+  #schedule .sub-heading {
+    text-align: center;
+    font-size: 18px;
+    font-style: italic;
+    margin: 0 auto 30px auto;
+  }
+  
+  #schedule .tab-pane {
+    transition: ease-in-out .2s;
+  }
+    .schedule-item{
+    border-radius: 10px;
+    border-bottom-style: groove;
+    border-bottom: 1px solid #cad4f6;
+    box-shadow: inset 0 0 0 0 #ffffff;
+    color: #ffffff;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin: 0 -.25rem;
+    transition: color .5s ease-in-out, box-shadow .4s ease-in-out;
+  }
+  .schedule-item:hover {
+    color: #fff;
+    box-shadow: inset 1000px 0 0 0 #0e1b4d;
+  }
+  
+   
+  #schedule .schedule-item time {
+    padding-bottom: 5px;
+    display: inline-block;
+  }
+  
+  #schedule .schedule-item .speaker {
+    width: 60px;
+    height: 60px;
+    overflow: hidden;
+    border-radius: 50%;
+    float: left;
+    margin: 0 10px 10px 0;
+  }
+  
+  #schedule .schedule-item .speaker img {
+    height: 100%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    margin-left: 50%;
+    transition: all ease-in-out 0.3s;
+  }
+  
+  #schedule .schedule-item h4 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 5px;
+  }
+  
+  #schedule .schedule-item h4 span {
+    font-style: italic;
+    color: #ffffff;
+    font-weight: normal;
+    font-size: 16px;
+  }
+  
+  #schedule .schedule-item p {
+    font-style: italic;
+    color: #ffffff;
+    margin-bottom: 0;
+  }
+  
+h6{
+  margin: 0;
+}
